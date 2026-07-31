@@ -28,5 +28,11 @@ body {
     background: #fff;
     border-radius: 100px;
     filter: drop-shadow(8px 8px 0 #0005);
-    animation: animateCloud;
+    animation: animateCloud 2s linear infinite;
+}
+
+@keyframes animateCloud {
+    0%, 100% {
+        filter: drop-shadow(8px 8px 0 #0005) drop-shadow(0 0 0 #fff);
+    }
 }
